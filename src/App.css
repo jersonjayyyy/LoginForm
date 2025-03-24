@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Merriweather&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #5B4636;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #D9A96E;
+}
+
+
+.App .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(34, 31, 31, 0.9);
+  box-shadow: 0 0 15px rgba(217, 169, 110, 0.6);
+}
+
+.App .login-form input {
+  padding: 12px;
+  border: 2px solid #8B5E3B;
+  border-radius: 5px;
+  background-color: #FFF5E1;
+  color: #5B4636;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.App .login-form input:focus {
+  box-shadow: 0 0 8px #D9A96E;
+}
+
+.App button {
+  padding: 12px;
+  background-color: #8B5E3B;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.App button:hover {
+  background-color: #A97142;
+  box-shadow: 0 0 10px #D9A96E;
+}
+
+.App p {
+  color: white;
+}
+
+.dashboard-page {
+  background-color: white;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background: url(image/bg1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.error-tooltip {
+  color: #721c24;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block; 
+  max-width: 250px;
+  word-wrap: break-word;
+  text-align: center; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  background: url(image/bg1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2.5rem;
+  width: 40%;
+  min-width: 350px;
+  margin-left: auto;
+  color: white;
+  box-sizing: border-box;
+}
+
+.login-heading {
+  font-family: 'Playfair Display', serif;
+  color: #c69c6d;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c69c6d;
+  z-index: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #c69c6d;
+  opacity: 0.7;
+}
+
+.login-button {
+  background-color: #c69c6d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #b68c5d;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.forgot-password {
+  color: #c69c6d;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.register-option {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link {
+  color: #c69c6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+
+.input-group .error-tooltip {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -22px;
+  z-index: 2;
+  font-size: 11px;
+  padding: 3px 8px;
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 30px; 
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+.login-slogan {
+  text-align: center;
+  color: #a67c52; 
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.login-image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.website-name-overlay {
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.website-name {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  color: #e0c9a6; 
+  margin-bottom: 1rem;
+}
+
+
+.website-tagline {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #d4b48c; 
+}
+
+
+.login-slogan {
+  text-align: center;
+  color: #a67c52;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  
+  .login-image-container {
+    height: 30vh;
+  }
+  
+  .website-name {
+    font-size: 2rem;
+  }
+}

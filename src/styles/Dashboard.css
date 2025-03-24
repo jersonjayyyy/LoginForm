@@ -1,0 +1,76 @@
+.dashboard-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #d2b48c;
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .metrics-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .metrics-card {
+    background: #8B5E3B;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .chart-container {
+    background: #f5f5dc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .logout-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+  
+  .logout-button {
+    background-color: #8B5A2B;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #8B5A2B;
+  }
+  .logout-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 10px;
+  }
+  
+  .logout-btn {
+    background-color: #8B5A2B;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .logout-btn:hover {
+    background-color: #8B5A2B;
+  }
+  .sidebar-heading {
+    color: #583E26;
+  }
